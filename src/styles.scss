@@ -1,8 +1,37 @@
 /* ================
-// Name
+// Todos
 // ============= */
 
-.selector {}
+.todos {}
+
+  .todo-compartment {
+    margin: 0 auto;
+    max-width: 600 / 16 * 1em;
+  }
+
+    .todos-title {}
+
+
+/* Todo Tool
+// ============= */
+
+.todo-tool {}
+
+  .todo-entry {
+    display: flex;
+  }
+
+    .todo-entry-input {
+      flex: auto;
+    }
+
+    .todo-entry-confirmation {}
+
+
+/* Todo Tool
+// ============= */
+
+.todos-list {}
 
 
 /* ================

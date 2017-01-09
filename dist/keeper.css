@@ -1,5 +1,22 @@
 /* ================
-// Name
+// Todos
+// ============= */
+.todo-compartment {
+  margin: 0 auto;
+  max-width: 37.5em;
+}
+
+/* Todo Tool
+// ============= */
+.todo-entry {
+  display: flex;
+}
+
+.todo-entry-input {
+  flex: auto;
+}
+
+/* Todo Tool
 // ============= */
 /* ================
 // Structure

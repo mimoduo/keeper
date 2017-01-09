@@ -20,7 +20,7 @@ var Keeper = function () {
   /* Variables scoped to Keeper */
   var db = new PouchDB('todos');
 
-  var todos = el('.todos');
+  var todos = el('.todo-tool');
   var todosList = el('.todos-list');
 
   /* Initialize Keeper */
@@ -108,9 +108,18 @@ var Keeper = function () {
   };
 
   var createTodo = function createTodo(todo) {
+    var todoItem = newEl('div', 'todo-item');
+
     var title = newEl('h4', 'todo-title');
     title.innerHTML = todo.title;
-    todosList.appendChild(title);
+    todoItem.appendChild(title);
+
+    var del = newEl('button', 'todo-delete');
+    del.innerHTML = 'Delete Todo';
+    del.addEventListener('click', removeTodo.bind(null, todo), false);
+    todoItem.appendChild(del);
+
+    todosList.appendChild(todoItem);
   };
 
   showTodos();
